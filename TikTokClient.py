@@ -115,7 +115,7 @@ class TikTokApiClient:
         return r.post("GET", self.base_url + path, headers=headers, data=payload)
 
     def account_login_email(self, install_id, device_id, openudid, operator_id, email, password):
-        path = "/login-username"
+        path = "/login-email"
         payload={}
         headers = {
             'tok-proxy': self.tok_proxy,
